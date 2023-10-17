@@ -30,3 +30,14 @@ if (triggered){
 		}
 	}
 }
+
+
+// velocidade aumenta gradativamente
+	
+if (current_wave = 1){
+	global.espd += 0.02
+}
+
+if(current_wave == 2){
+	global.espd += 0.02
+}

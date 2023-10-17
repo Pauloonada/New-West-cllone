@@ -1,6 +1,6 @@
 hspd = 0;
 vspd = 0;
-spd = 2;
+global.espd = 3;
 grv = 0.4;
 peak_cursor = function(){
 	

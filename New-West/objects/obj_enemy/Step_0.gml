@@ -6,7 +6,7 @@ if (instance_exists(obj_player)) {
     var _dir = point_direction(x, y, obj_player.x, obj_player.y);
     
     // mover-se na direção do player
-    hspd = lengthdir_x(spd, _dir);
+    hspd = lengthdir_x(global.espd, _dir);
 }
 else {
     hspd = 0;
@@ -17,21 +17,21 @@ if (place_meeting(x + hspd, y, obj_enemy)) {
     hspd = 0;
 }
 
-vspd = vspd + grv;
+vspd += grv;
 
 // COLISÃO HORIZONTAL
-if place_meeting(x + hspd, y, obj_floor)
-{	
-		while(!place_meeting(x + sign(hspd), y, obj_floor))
-	{
+if place_meeting(x + hspd, y, obj_floor){
+	
+		while(!place_meeting(x + sign(hspd), y, obj_floor)){
+			
 		x = x + sign(hspd)
 	}
 	
 	hspd = 0;
 }
 
-if place_meeting(x + hspd, y, obj_wall){
-	while (!place_meeting(x + sign(hspd), y, obj_wall)){
+if place_meeting(x + hspd, y, obj_wallEnemy){
+	while (!place_meeting(x + sign(hspd), y, obj_wallEnemy)){
 		x += sign(hspd)
 	}
 	
@@ -41,9 +41,9 @@ if place_meeting(x + hspd, y, obj_wall){
 x = x + hspd
 
 // COLISÃO VERTICAL
-if place_meeting(x,y+vspd,obj_wall){
+if place_meeting(x,y+vspd,obj_wallEnemy){
 	
-	while(!place_meeting(x,y+sign(vspd),obj_wall))
+	while(!place_meeting(x,y+sign(vspd),obj_wallEnemy))
 	{
 		y = y + sign(vspd);
 	}
