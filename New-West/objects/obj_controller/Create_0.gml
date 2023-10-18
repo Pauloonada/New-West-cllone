@@ -1,2 +1,2 @@
 global.ammo = 30;
-global.ammomax = 90;
+global.ammomax = 80;

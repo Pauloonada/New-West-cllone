@@ -1,7 +1,9 @@
 var mouse_click = mouse_check_button_pressed(mb_left);
 
 if (mouse_click or keyboard_check_pressed(vk_space)){
+	
 	if (meutexto == noone){
+		audio_play_sound(Bar_music, 1, 2);
 		meutexto = instance_create_layer(x, y, "Dialogo", obj_texto);
 		meutexto.texto = texto;
 	}

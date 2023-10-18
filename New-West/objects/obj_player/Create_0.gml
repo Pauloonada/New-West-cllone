@@ -2,7 +2,6 @@ spd = 5;
 hspd = 0;
 vspd = 0;
 grv = 0.4;
-global.life = 4;
 image_speed = 1;
 peak_cursor = function(){
 	// CHECAR SE O X DO MOUSE É MAIOR QUE O DO PLAYER
@@ -16,3 +15,10 @@ peak_cursor = function(){
 		image_xscale = -1;
 	}
 }
+
+life_max = 100;
+life = life_max;
+
+recently_hit = false;
+
+counter = 0

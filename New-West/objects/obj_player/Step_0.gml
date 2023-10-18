@@ -1,7 +1,7 @@
 #region CONTROLES
 key_right = keyboard_check(ord("D"));	// DIREITA
 key_left = keyboard_check(ord("A"));		// ESQUERDA
-key_jump = keyboard_check(ord("W"));		// PULO
+key_jump = keyboard_check(ord("W")) or keyboard_check(vk_space);		// PULO
 key_reload = keyboard_check_pressed(ord("R"));	// RECARGA
 mb_shoot = mouse_check_button_pressed(mb_left);
 #endregion
@@ -61,8 +61,10 @@ if (place_meeting(x,y+1,obj_wall) and key_jump) or (place_meeting(x, y + 1, obj_
 }
 #endregion
 
-if global.life <= 0 game_restart();
+// morte
+if life <= 0 game_restart();
 
+// segue o cursor
 peak_cursor();
 
 #region TROCA DE SPRITES
@@ -87,3 +89,15 @@ if hspd = 0 {
 }
 
 #endregion
+
+// Caso o player regenerar mais que o necessário, diminuir a vida
+
+if (life > life_max){
+	life = life_max
+}
+
+counter++;
+
+if(instance_exists(self)){
+	audio_stop_sound(Bar_music);
+}

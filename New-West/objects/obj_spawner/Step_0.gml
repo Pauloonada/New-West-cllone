@@ -14,10 +14,10 @@ if (triggered){
 		}
 	}
 	
-	//increase timer
+	// increase timer
 	timer++;
 	
-	//Next wave or end spawner when all enemies have died
+	// Next wave or end spawner when all enemies have died
 	if (remaining[current_wave] <= 0){
 		
 		if (current_wave == total_waves){ // ran out of waves
@@ -27,17 +27,34 @@ if (triggered){
 		else{
 			current_wave++;
 			timer = 0;
+			if (obj_player.life < obj_player.life_max){
+				obj_player.life += 4;
+			}
 		}
 	}
 }
 
-
 // velocidade aumenta gradativamente
 	
 if (current_wave = 1){
-	global.espd += 0.02
+	global.espd += 0.02;
 }
 
 if(current_wave == 2){
-	global.espd += 0.02
+	global.espd += 0.02;
+}
+	
+if (current_wave = 3){
+	global.espd += 0.02;
+}
+
+if(current_wave == 4){
+	global.espd += 0.02;
+}
+
+if(current_wave == 5){
+	global.espd += 0.02;
+	instance_destroy(obj_cacto);
+	instance_destroy(obj_cacto1);
+	instance_destroy(obj_areia);
 }
