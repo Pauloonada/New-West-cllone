@@ -93,6 +93,7 @@
     {"id":{"name":"spr_bar_bg","path":"sprites/spr_bar_bg/spr_bar_bg.yy",},},
     {"id":{"name":"spr_bg","path":"sprites/spr_bg/spr_bg.yy",},},
     {"id":{"name":"spr_glock","path":"sprites/spr_glock/spr_glock.yy",},},
+    {"id":{"name":"spr_fundoGaia","path":"sprites/spr_fundoGaia/spr_fundoGaia.yy",},},
     {"id":{"name":"spr_floor_1","path":"sprites/spr_floor_1/spr_floor_1.yy",},},
     {"id":{"name":"spr_cacto1","path":"sprites/spr_cacto1/spr_cacto1.yy",},},
     {"id":{"name":"spr_player_walking","path":"sprites/spr_player_walking/spr_player_walking.yy",},},

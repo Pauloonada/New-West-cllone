@@ -57,4 +57,6 @@ if(current_wave == 5){
 	instance_destroy(obj_cacto);
 	instance_destroy(obj_cacto1);
 	instance_destroy(obj_areia);
+	instance_deactivate_layer("Background");
+	layer_set_visible(layer_get_id("Backgrounds_1"), true)
 }

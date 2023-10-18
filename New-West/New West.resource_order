@@ -68,6 +68,7 @@
     {"name":"spr_bar_bg","order":1,"path":"sprites/spr_bar_bg/spr_bar_bg.yy",},
     {"name":"spr_bg","order":16,"path":"sprites/spr_bg/spr_bg.yy",},
     {"name":"spr_glock","order":9,"path":"sprites/spr_glock/spr_glock.yy",},
+    {"name":"spr_fundoGaia","order":23,"path":"sprites/spr_fundoGaia/spr_fundoGaia.yy",},
     {"name":"spr_floor_1","order":8,"path":"sprites/spr_floor_1/spr_floor_1.yy",},
     {"name":"spr_cacto1","order":20,"path":"sprites/spr_cacto1/spr_cacto1.yy",},
     {"name":"spr_player_walking","order":4,"path":"sprites/spr_player_walking/spr_player_walking.yy",},

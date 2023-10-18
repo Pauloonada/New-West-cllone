@@ -73,6 +73,7 @@ if life <= 0{
 	instance_destroy(self);
 	instance_destroy(obj_bossGun);
 	audio_stop_sound(Boss_music);
+	room_goto(0);
 }
 
 if(instance_exists(self) and music_play = true){
