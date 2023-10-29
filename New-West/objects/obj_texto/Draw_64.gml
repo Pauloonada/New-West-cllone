@@ -14,7 +14,6 @@ if (letra <= tamanho_do_texto){
 }
 
 //Desenha o texto
-draw_set_font(font_cut);
 draw_set_halign(fa_left);
 draw_text_ext(0 + margem / 2 + 20, room_height - 100 + 10, palavra, 30, room_width - 210);
 draw_set_font(-1);

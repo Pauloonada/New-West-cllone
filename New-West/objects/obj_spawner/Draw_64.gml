@@ -1,5 +1,7 @@
 /// @desc optional debug text
 
+draw_set_font(font_cut);
+
 if (triggered){
 	
 	var str = "remaining: ";

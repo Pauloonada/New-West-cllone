@@ -12,10 +12,7 @@
     "name": "Cutscene",
     "path": "folders/Objetos/Cutscene.yy",
   },
-  "parentObjectId": {
-    "name": "obj_pai_personagens",
-    "path": "objects/obj_pai_personagens/obj_pai_personagens.yy",
-  },
+  "parentObjectId": null,
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,

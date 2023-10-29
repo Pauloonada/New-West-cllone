@@ -1,4 +1,4 @@
-texto = "";
+texto = [""];
 palavra = "";
 letra = 1;
 tamanho_do_texto = 0;
