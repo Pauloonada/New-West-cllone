@@ -1,3 +1,5 @@
+draw_set_color(c_white);
+
 pag_limite = array_length(texto) - 1;
 
 var margem = room_width - sprite_get_width(spr_caixa);

@@ -10,7 +10,7 @@ var m_y = device_mouse_y_to_gui(0)
 draw_set_halign(fa_center);
 draw_set_valign(fa_center);
 
-for(var i = 0;i < op_max;i++){
+for(var i = 0; i < op_max; i++){
 	var y2 = y1 + (margin * i);
 	var string_w = string_width(options[i]);
 	var string_h = string_height(options[i]);
